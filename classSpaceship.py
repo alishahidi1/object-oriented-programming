@@ -12,3 +12,6 @@ class Spaceship():
         def reduceShield(self, amount):
             self._shieldStrength -= amount
         
+
+#instantiation
+myShip = Spaceship()
