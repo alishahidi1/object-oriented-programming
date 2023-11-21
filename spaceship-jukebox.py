@@ -1,4 +1,4 @@
-class Song:
+class Song():
     def __init__(self, title=None, artist=None):
         if title == None:
             self._title = "no title"
@@ -17,3 +17,18 @@ class Song:
     def play(self):
         return "Song is played"
     
+class Album():
+    def __init__(self, titles = None, songs = None):
+        if titles == None:
+            self._titles = [""]
+        else:
+            self._titles = titles
+        if songs == None:
+            self._songs = []
+        else:
+            self._songs = songs
+    
+    def getTitles(self):
+        return self._titles
+    def getSong(self, title):
+        return self._songs(title)
