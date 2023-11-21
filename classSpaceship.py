@@ -1,5 +1,8 @@
 class Spaceship():
     
+    #class variable - static variable
+    toughness = 0.8
+
     def __init__(self,name=None):
         if name is None:
             self.callSign = "Nameless spaceship"
