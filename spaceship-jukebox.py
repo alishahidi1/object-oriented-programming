@@ -32,3 +32,19 @@ class Album():
         return self._titles
     def getSong(self, title):
         return self._songs(title)
+    
+class Library():
+    def __init__(self, titles = None, albums = None):
+        if titles == None:
+            self._titles = [""]
+        else:
+            self._titles = titles
+        if albums == None:
+            self._albums = []
+        else:
+            self._albums = albums
+    
+    def getTitles(self):
+        return self._titles
+    def getSong(self, title):
+        return self._albums(title)
