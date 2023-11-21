@@ -11,16 +11,21 @@ class Spaceship():
             self.callSign = name
             self._shieldStrength = 100
 
-
-
     #methods
     def fireMissile(self):
         return "Pew!"
     
     def reduceShield(self, amount):
         self._shieldStrength -= amount
-        
+    
+    #static method
+    def increaseDifficulty(t):
+        Spaceship.toughness += t
+
 
 #instantiation
 myShip = Spaceship()
 print(myShip.callSign)
+print(Spaceship.toughness)
+Spaceship.increaseDifficulty(0.2)
+print(Spaceship.toughness)
