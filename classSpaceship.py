@@ -27,6 +27,7 @@ class CargoShuttle(Spaceship):
     pass
 
 
+
 #instantiation
 myShip = Spaceship()
 print(myShip.callSign)
