@@ -22,6 +22,10 @@ class Spaceship():
     def increaseDifficulty(t):
         Spaceship.toughness += t
 
+#Inherited CargoShuttle class:
+class CargoShuttle(Spaceship):
+    pass
+
 
 #instantiation
 myShip = Spaceship()
